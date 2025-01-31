@@ -2,7 +2,7 @@
 +++
 # Hi!
 
-I'm Francesco. I write[^1] about software, work stuff, elfgames and whatever else comes to my mind.
+I'm Francesco. I write[^1] about software, work stuff, elfgames, and whatever else comes to mind.
 Feel free to [say hi](mailto:cataniafran@gmail.com).
 
 
