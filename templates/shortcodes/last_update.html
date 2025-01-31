@@ -1,0 +1,12 @@
+<div class="last-update">
+    {%- if page.updated %}
+      <p>
+      <span>{{ trans(key="last_update", lang=lang)}}:</span>
+        <i>
+          <time datetime="{{ page.updated | date(format='%+') }}">
+            {{- page.updated | date(format=config.extra.date_format) -}}
+          </time>
+        </i>
+      </p>
+    {%- endif %}
+</div>

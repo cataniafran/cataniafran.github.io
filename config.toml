@@ -1,0 +1,78 @@
+title = "Save vs. burnout"
+base_url = "/"
+description = "My personal blog. Programming, hobbies, life. You know, a blog."
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+default_language = "en"
+
+theme = "zola-bearblog"
+
+[translations]
+no_posts = "No posts yet"
+remove_filter = "Remove filter"
+filtering_for = "Filtering for"
+made_with = "Made with"
+table_of_contents = "Table of contents"
+language = "language"
+site = "site"
+last_update = "Last update"
+#
+# [languages.it]
+# title = "Zola ʕ•ᴥ•ʔ Bear Blog"
+# description = "Ein Zola-theme basiert auf Bear Blog."
+#
+# taxonomies = [
+#   { name = "tags", feed = true },
+# ]
+
+# [languages.it.translations]
+# no_posts = "Nessun post"
+# remove_filter = "Rimuovi filtro"
+# filtering_for = "Filtra per"
+# made_with = "Realizzato con"
+# table_of_contents = "Indice dei contenuti"
+# language = "lingua"
+# site = "Sito"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+date_format = "%Y-%m-%d"
+webserver_sends_csp_headers = true
+language_switcher = false
+translations = [
+  { code = "en", name = "English" },
+  # { code = "it", name = "Italiano" },
+]
+
+[extra.table_of_contents]
+show = true
+max_level = 2
+visible_on_load = true
+
+[[extra.main_menu]]
+name = "Home"
+# name_it = "Home"
+url = "@/_index.md"
+
+[[extra.main_menu]]
+name = "Blog"
+# name_it = "Blog"
+url = "@/blog/_index.md"
+
+[[extra.main_menu]]
+name = "Now"
+# name_it = "Bear"
+url = "@/now.md"

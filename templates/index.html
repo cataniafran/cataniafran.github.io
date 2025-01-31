@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+  <main>
+    {{ section.content | safe }}
+    <hr>
+    <h2>My most recent posts</h2>
+    {% set limit = 3 %}
+    {% set blog_section = get_section(path="blog/_index.md") %}
+    <ul>
+    {% for post in blog_section.pages %}
+      {% if loop.index <= limit %}
+        <li>
+          <a href="{{post.permalink}}">{{post.title}}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </main>
+{% endblock %}
