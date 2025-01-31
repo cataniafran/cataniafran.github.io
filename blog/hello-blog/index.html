@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello blog! | Save vs. burnout</title>
+  <meta name="title" content="Hello blog!">
+<meta name="description" content="My personal blog. Programming, hobbies, life. You know, a blog.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+  <style>
+    :root {
+    --width: 800px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+  nav a::before {
+    content: "["
+  }
+  nav a::after {
+    content: "]"
+  }
+
+  nav span.active {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  pre code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 0.875rem;
+    overflow-x: auto;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  /* blog post list */
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+  .tags {
+    font-size: smaller;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+  <a href="/" class="title">
+    <h1>Save vs. burnout</h1>
+  </a>
+  <nav aria-label="site">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/now/">Now</a>
+  </nav>
+</header>
+<h1>Hello blog!</h1>
+      <p>
+        <i>
+          <time datetime="2025-01-30T00:00:00+00:00" pubdate>2025-01-30</time>
+        </i>
+      </p>
+  <main>
+    <p>I've almost never written on the internet.<br />
+My social media accounts are clinically dead. On Reddit and the few forums that I follow I'm mainly a lurker.<br />
+So why start a blog?</p>
+<p>I'm not entirely sure why.
+Maybe it's some kind of reaction to the enshittification of the internet. Socials sucks in a way that is almost hurting: The dynamics they promote suck; the owners are all tied for first in the contest of who sucks more; the algorithms keep promoting stuff that really sucks.<br />
+Communities, especially niche ones, have mostly migrated from forums and webrings to closed, non-searchable Discord servers. Where once there were long and useful posts now is reactions, memes and one liners.<br />
+I don't even want to start complaining about the tech. Who am I kidding? I'm dying to - but it's probably going to be a post on it's own.</p>
+<p>I know, this sounds like a "back in my day" rant, and it fundamentally is.<br />
+I had the luck to be a 9 year old kid with unsupervised and mostly unlimited access to the internet. I loved that internet. In those gloriously ugly Geocites and Altervista pages or in even more uglier Forumfree communities I discovered a world of interests, hobbies and worldviews that I would never have been exposed to otherwise.</p>
+<p>So here I am, couple of decades later, trying to do my part in keeping alive that kind of internet.<br />
+Dead simple tech for simply showing words in someone's browser. Almost no Javascript and a couple of CSS rules - I was almost tempted to go <a href="https://motherfuckingwebsite.com/">all-in</a> on that, but <a href="https://codeberg.org/alanpearce/zola-bearblog">this Zola theme</a> is a lovely compromise - in service of a space for my thoughts, rants and hobbies.</p>
+
+  </main>
+  <p>
+        Tags:
+          <a href="/tags/blogging/">#blogging</a>
+  </p>
+<footer>
+    Made with <a href="https://codeberg.org/alanpearce/zola-bearblog">Zola ʕ•ᴥ•ʔ Bear</a>
+</footer>
+</body>
+</html>

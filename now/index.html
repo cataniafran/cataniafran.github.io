@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Now | Save vs. burnout</title>
+  <meta name="title" content="Now">
+<meta name="description" content="My personal blog. Programming, hobbies, life. You know, a blog.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+  <style>
+    :root {
+    --width: 800px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+  nav a::before {
+    content: "["
+  }
+  nav a::after {
+    content: "]"
+  }
+
+  nav span.active {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  pre code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 0.875rem;
+    overflow-x: auto;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  /* blog post list */
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+  .tags {
+    font-size: smaller;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+  <a href="/" class="title">
+    <h1>Save vs. burnout</h1>
+  </a>
+  <nav aria-label="site">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/now/">Now</a>
+  </nav>
+</header>
+<h1>Now</h1>
+  <main>
+    <p><em>This is my <a href="https://nownownow.com/about">Now page</a>.</em><br />
+<div class="last-update">
+      <p>
+      <span>Last update:</span>
+        <i>
+          <time datetime="2025-01-31T00:00:00+00:00">2025-01-31</time>
+        </i>
+      </p>
+</div>
+</p>
+<h3 id="still-working-at-qubicaamf">Still working at QubicaAMF</h3>
+<p>After a year working on the <a href="https://www.qubicaamf.com/bowling-products/entertainment-systems/neoverse">Neoverse</a> product team, I'm back on Team Payments.<br />
+In the coming months I'll continue working on our new micro-frontend architecture.</p>
+<h3 id="messing-with-rails">Messing with Rails</h3>
+<p>I wanted to see what all the fuss around Ruby on Rails was about.<br />
+I'm building a toy application - some kind of polling or friendly-stupid-bets website.<br />
+I love the no-JS-build approach, testing tools and general philosophy. Not entirely sold on Ruby as a language.</p>
+<h3 id="planning-a-trip-to-japan">Planning a trip to Japan</h3>
+<p>My girlfriend and I are still committed to a "YOLO - at least one new country visited per year" plan and, if the Skyscanner gods are favorable, it will be Japan next December.</p>
+<h3 id="third-year-of-d-d-ose-sandbox-campaign">Third year of <del>D&amp;D</del> OSE sandbox campaign</h3>
+<p>Against all odds I'm still refereeing a d&amp;d campaign. What started as a "let's try some simple dungeon crawling" has turned into a multi-year campaign in pseudo-9th-century Europe. Loving it.</p>
+<h3 id="no-hema-this-year">No HEMA this year</h3>
+<p>Thanks to a shoulder injury last July, this will <em>not</em> be my 4th year as a HEMA practitioner. I hope to be back swinging swords in the next few months.</p>
+
+  </main>
+  <p>
+  </p>
+<footer>
+    Made with <a href="https://codeberg.org/alanpearce/zola-bearblog">Zola ʕ•ᴥ•ʔ Bear</a>
+</footer>
+</body>
+</html>
